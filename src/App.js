@@ -2,19 +2,24 @@
 import './App.css';
 
 import { Route, Routes } from 'react-router-dom';
-import { HomePage } from './pages/HomePage.js'
+import { HomePage } from './components/'
+import { NavBar } from './components/Style';
+
 
 
 const App = () => {
+
+
+
   return (
     <div className="App">
-      <div id='nav'>
+      <NavBar>
         Todo List - React APP
-      </div>
+      </NavBar>
+    
       <Routes>
         <Route path='/' element={<HomePage />} />
       </Routes>
-      
     </div>
   );
 }

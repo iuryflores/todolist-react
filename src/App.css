@@ -1,15 +1,3 @@
 .App {
   text-align: center;
 }
-#nav {
-  background-color: aquamarine;
-  padding: 10px;
-  font-weight: 500;
-  color:cadetblue;
-}
-.todoList {
-  padding: 20px;
-  margin: 20px;
-  border: 2px solid aquamarine;
-  color: cadetblue
-}
