@@ -1,13 +1,17 @@
+import axios from "axios";
+import { useState } from "react";
 import { DeleteButton, TodoList } from "./Style.js";
 
-export const AllTodos = ({ _id, title, completed, createdAt, updatedAt }) => {
+const localhost = 'http://localhost:3000/todos'
+
+export const AllTodos = ({ _id, title, completed, createdAt, updatedAt, doneTask, removeItem }) => {
 
 
     return (
         <TodoList>
-            <input type="checkbox" defaultChecked={completed} />
+            <input type="checkbox" defaultChecked={completed} onClick={() => doneTask(_id)} />
             {title}
-            <DeleteButton>x</DeleteButton>
+            <DeleteButton onClick={() => removeItem(_id)}>x</DeleteButton>
         </TodoList>
     );
 };
