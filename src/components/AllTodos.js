@@ -1,11 +1,6 @@
-import axios from "axios";
-import { useState } from "react";
 import { DeleteButton, TodoList } from "./Style.js";
 
-const localhost = 'http://localhost:3000/todos'
-
-export const AllTodos = ({ _id, title, completed, createdAt, updatedAt, doneTask, removeItem }) => {
-
+export const AllTodos = ({ _id, title, completed, doneTask, removeItem }) => {
 
     return (
         <TodoList>

@@ -6,7 +6,7 @@ const localhost = 'http://localhost:3000/todos'
 
 export const HomePage = () => {
     const [todos, setTodos] = useState([])
-    const [remove, setRemove] = useState()
+    /*const [remove, setRemove] = useState()*/
     const [done, setDone] = useState()
     const [task, setTask] = useState('')
     const getTodos = async () => {
