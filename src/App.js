@@ -2,15 +2,12 @@
 import './App.css';
 
 import { Route, Routes } from 'react-router-dom';
-import { HomePage } from './components/'
+import { HomePage } from './pages/HomePage'
 import { NavBar } from './components/Style';
 
 
 
 const App = () => {
-
-
-
   return (
     <div className="App">
       <NavBar>

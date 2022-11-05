@@ -1,4 +1,4 @@
-import { AllTodos } from "../components/";
+import { AllTodos } from "../components/TodoList";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -9,8 +9,8 @@ export const HomePage = () => {
     /*const [remove, setRemove] = useState()*/
     const [done, setDone] = useState()
     const [task, setTask] = useState('')
+    
     const getTodos = async () => {
-
         const { data } = await axios.get(localhost);
         setTodos(data);
     };
